@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoNest - Sklep Zero-Waste</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #e8f5e9;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .product {
+            background: #fff;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .product h3 {
+            margin: 1rem 0;
+        }
+
+        .product p {
+            margin-bottom: 1rem;
+        }
+
+        .product .btn {
+            display: block;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>EcoNest - Twój Sklep Zero-Waste</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Oferta</a></li>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Witaj w EcoNest</h1>
+        <p>Produkty zero-waste, które zmieniają świat na lepsze.</p>
+        <a href="#products" class="btn">Zobacz produkty</a>
+    </section>
+
+    <section class="products" id="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200" alt="Butelka wielorazowa">
+            <h3>Butelka wielorazowa</h3>
+            <p>Stylowa, lekka i przyjazna dla środowiska.</p>
+            <a href="#" class="btn">Dodaj do koszyka</a>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200" alt="Szampon w kostce">
+            <h3>Szampon w kostce</h3>
+            <p>Naturalny szampon, który dba o Twoje włosy i planetę.</p>
+            <a href="#" class="btn">Dodaj do koszyka</a>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200" alt="Mydło rzemieślnicze">
+            <h3>Mydło rzemieślnicze</h3>
+            <p>Ręcznie robione mydło z naturalnych składników.</p>
+            <a href="#" class="btn">Dodaj do koszyka</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>O nas</h2>
+        <p>EcoNest to sklep stworzony z myślą o przyszłości. Wierzymy, że każdy mały krok w stronę ekologii może zrobić ogromną różnicę. Naszą misją jest dostarczanie produktów, które pomagają zmniejszyć ilość odpadów i wspierają styl życia zero-waste.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Imię:</label><br>
+            <input type="text" id="name" name="name" placeholder="Twoje imię"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Twój email"><br><br>
+
+            <label for="message">Wiadomość:</label><br>
+            <textarea id="message" name="message" placeholder="Twoja wiadomość" rows="5"></textarea><br><br>
+
+            <input type="submit" value="Wyślij" class="btn">
+        </form>
+    </section>
+
+    <footer>
+        <p>EcoNest &copy; 2024. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+
+</html>
